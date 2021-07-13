@@ -1,0 +1,72 @@
+.body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.animacion_contenedor{
+    width: 100px;
+    height: 50px;
+    padding:10px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    transform: rotate(180deg);
+}
+
+.box{
+    width: 10px;
+    height: 40px;
+    background-color: rgb(38, 182, 151);
+    border-radius: 3px; 
+    opacity:0;
+}
+
+.uno{
+    animation:uno 2s infinite;
+    animation-delay: 1000ms;
+}
+
+.dos{
+    animation:uno 2s infinite;
+    animation-delay: 800ms;
+}
+
+.tres{
+    animation:uno 2s infinite;
+    animation-delay: 600ms;
+}
+
+.cuatro{
+    animation:uno 2s infinite;
+    animation-delay: 400ms;
+}
+
+.cinco{
+    animation:uno 2s infinite;
+    animation-delay: 200ms;
+}
+
+.seis{
+    animation:uno 2s infinite;
+}
+
+
+@keyframes uno {
+    0% {
+        opacity:0;
+        height:0;
+    }
+
+    50% {
+		height: 40px;
+		opacity: 1;
+	}
+	
+	100% {
+		height: 0;
+		opacity: 0;
+    }
+}
+
